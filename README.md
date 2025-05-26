@@ -1,4 +1,4 @@
-## 🌤 Weather App 👉 [Probá la app en vivo](https://florr566.github.io/Weather-App-FR/)
+### 👉 [Probá la app en vivo](https://florr566.github.io/Weather-App-FR/)
 
 Es una aplicación web simple para consultar el clima actual de cualquier ciudad del mundo usando la API de OpenWeatherMap, en tiempo real.
 
