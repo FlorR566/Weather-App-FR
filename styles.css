@@ -1,0 +1,405 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+}
+
+/* Estilos para web */
+@media (width > 600px) {
+	body {
+		height: 100%;
+		background: #222;
+		background-image: url(images/backgroungBody1.png);
+		background-position: bottom;
+		background-attachment: fixed;
+	}
+
+	.titlePage {
+		width: 250px;
+		height: 100px;
+		margin-top: 25px;
+		margin-left: 150px;
+		padding: 6px 10px;
+		border-radius: 0px 0px 20px 0px;
+		background: url(images/faviconbackgroung.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		color: #dbe4ff;
+		text-align: center;
+		line-height: 1;
+		font-size: 40px;
+		font-weight: 700;
+	}
+
+	.card {
+		width: 90%;
+		max-width: 470px;
+		background: linear-gradient(135deg, #feba, #5b548a);
+		color: #fff;
+		margin: 5px auto 0px;
+		border-radius: 20px;
+		padding: 40px 35px;
+		text-align: center;
+	}
+
+	.search {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.search input {
+		border: 0;
+		outline: 0;
+		background: #fff4e6;
+		color: #555;
+		padding: 10px 25px;
+		height: 60px;
+		border-radius: 30px;
+		flex: 1;
+		margin-right: 16px;
+		font-size: 18px;
+	}
+	.search button {
+		width: 60px;
+		height: 60px;
+		border: 0;
+		outline: 0;
+		background: #fff4e6;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.search button img {
+		width: 20px;
+	}
+	.weather-icon {
+		width: 170px;
+		margin-top: 30px;
+	}
+	.weather h1 {
+		font-size: 80px;
+		font-weight: 500;
+	}
+
+	.weather h2 {
+		font-size: 45px;
+		font-weight: 400;
+		margin-top: -10px;
+	}
+
+	.details {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 20px;
+		margin-top: 50px;
+	}
+	.col {
+		display: flex;
+		align-items: center;
+		text-align: left;
+	}
+
+	.col img {
+		width: 40px;
+		margin-right: 10px;
+	}
+
+	.humidity,
+	.wind {
+		font-size: 28px;
+		margin-top: -6px;
+	}
+
+	.weather {
+		display: none;
+	}
+
+	.error {
+		width: 324px;
+		text-align: left;
+		margin-top: 20px;
+		margin-left: 10px;
+		font-size: 14px;
+		font-weight: 500;
+		display: none;
+		color: #ffff01;
+	}
+
+	.drizzle {
+		background-image: url("images/drizzleWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.mist {
+		background-image: url("images/mistWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.rain {
+		background-image: url("images/rainWeather.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	.clouds {
+		background-image: url("images/cloudsWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.clear {
+		background-image: url("images/clearWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.snow {
+		background-image: url("images/snowWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+	.footerSection {
+		width: 100%;
+		height: 30px;
+		background-color: #000000;
+		font-size: small;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		bottom: 0px;
+		padding: 0px 30px;
+	}
+
+	.footer__copyright,
+	.footer__link {
+		color: #dbe4ff;
+		text-decoration: none;
+	}
+
+	.gitLink {
+		width: 200px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.github {
+		color: #dbe4ff;
+		text-decoration: none;
+	}
+
+	.linkedIn {
+		color: #dbe4ff;
+		text-decoration: none;
+	}
+
+	.mail {
+		color: #dbe4ff;
+		text-decoration: none;
+	}
+}
+
+/* Estilos para mobile */
+
+@media (width <= 599px) {
+	html,
+	body {
+		width: 100%;
+		height: 100dvh;
+		overflow: hidden; /* Para evitar scroll si no querés que se pueda mover */
+		background: #000000;
+		background-image: url(images/backgroungBodyMobile.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.titlePage {
+		width: 300px;
+		height: 70px;
+		margin-top: 5px;
+		margin-left: 75px;
+		padding: 18px 10px;
+		border-radius: 0px 0px 20px 0px;
+		background: url(images/faviconbackgroung.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+		color: #dbe4ff;
+		text-align: center;
+		line-height: 1;
+		font-size: 30px;
+		font-weight: 900;
+	}
+
+	.card {
+		width: 95%;
+		background: linear-gradient(135deg, #feba, #5b548a);
+		color: #fff;
+		margin: 15px auto 0px;
+		border-radius: 20px;
+		padding: 40px 15px;
+		text-align: center;
+		z-index: 2;
+	}
+
+	.search {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.search input {
+		border: 0;
+		outline: 0;
+		background: #fff4e6;
+		color: #555;
+		padding: 10px 0px 10px 20px;
+		height: 60px;
+		border-radius: 30px;
+		flex: 1;
+		margin-right: 8px;
+		font-size: 18px;
+	}
+	.search button {
+		width: 60px;
+		height: 60px;
+		border: 0;
+		outline: 0;
+		background: #fff4e6;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.search button img {
+		width: 20px;
+	}
+
+	.weather-icon {
+		width: 170px;
+		margin-top: 30px;
+	}
+	.weather h1 {
+		font-size: 80px;
+		font-weight: 500;
+	}
+
+	.weather h2 {
+		font-size: 45px;
+		font-weight: 400;
+		margin-top: -10px;
+	}
+
+	.details {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 5px;
+		margin-top: 50px;
+	}
+	.col {
+		display: flex;
+		align-items: center;
+		text-align: left;
+	}
+
+	.col img {
+		width: 35px;
+		margin-right: 10px;
+	}
+
+	.humidity,
+	.wind {
+		font-size: 28px;
+		margin-top: -6px;
+	}
+
+	.weather {
+		display: none;
+	}
+
+	.error {
+		width: 324px;
+		text-align: left;
+		margin-top: 25px;
+		margin-left: 10px;
+		font-size: 14px;
+		font-weight: 500;
+		display: none;
+		color: #ffff01;
+	}
+	.drizzle {
+		background-image: url("images/drizzleWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.mist {
+		background-image: url("images/mistWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.rain {
+		background-image: url("images/rainWeather.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	.clouds {
+		background-image: url("images/cloudsWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.clear {
+		background-image: url("images/clearWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.snow {
+		background-image: url("images/snowWeather.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.footerSection {
+		width: 100%;
+		height: 30px;
+		background-color: #000000;
+		font-size: small;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 0px;
+	}
+
+	.footer__copyright,
+	.footer__link {
+		color: #dbe4ff;
+		text-decoration: none;
+	}
+
+	.mail {
+		display: none;
+	}
+
+	.github {
+		display: none;
+	}
+
+	.linkedIn {
+		display: none;
+	}
+}
