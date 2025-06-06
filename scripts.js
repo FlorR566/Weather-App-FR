@@ -45,7 +45,7 @@ async function checkWeather(city) {
 		} else if (data.weather[0].main == "Snow") {
 			weatherIcon.src = "images/snow.png";
 			document.body.classList.add("snow");
-			document.titlePage.classList.add("highlight");
+			document.querySelector(".titlePage").style.color = "#000000";
 		}
 
 		document.querySelector(".weather").style.display = "block";
@@ -64,8 +64,20 @@ input.addEventListener("keydown", function (event) {
 		if (button) button.click();
 	} else {
 		document.body.className = ""; // Borra clases anteriores
+		document.querySelector(".weather").style.display = "none"; // Esconde los datos de la card
+		document.querySelector(".titlePage").style.color = "#dbe4ff"; // Supuestamente cambia el color del título.
 		// Cualquier otra tecla (incluye Delete, Backspace, letras, etc.)
 		const error = document.querySelector(".error");
 		if (error) error.style.display = "none";
 	}
 });
+
+// const h1 = document.querySelector("h1");
+// console.log(h1); // ¿es null o existe?
+
+// if (h1) {
+// 	h1.classList.remove("algo");
+// 	h1.classList.add("highlight");
+// } else {
+// 	console.warn("No se encontró el h1");
+// }
