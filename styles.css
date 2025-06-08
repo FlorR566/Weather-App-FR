@@ -192,16 +192,8 @@
 		justify-content: space-between;
 	}
 
-	.github {
-		color: #dbe4ff;
-		text-decoration: none;
-	}
-
-	.linkedIn {
-		color: #dbe4ff;
-		text-decoration: none;
-	}
-
+	.github,
+	.linkedIn,
 	.mail {
 		color: #dbe4ff;
 		text-decoration: none;
@@ -391,14 +383,8 @@
 		text-decoration: none;
 	}
 
-	.mail {
-		display: none;
-	}
-
-	.github {
-		display: none;
-	}
-
+	.mail,
+	.github,
 	.linkedIn {
 		display: none;
 	}
