@@ -57,6 +57,7 @@ searchBtn.addEventListener("click", () => {
 	checkWeather(searchBox.value);
 });
 
+// Formula para eliminar los estilos aplicados apenas empezamos a borrar la ciudad
 input.addEventListener("keydown", function (event) {
 	if (event.key === "Enter") {
 		event.preventDefault(); // Previene Enter
